@@ -16,10 +16,10 @@ const endpoint = {
   lookerProDashboard: 'apis/proxies/v8/looker/dashboard',
 }
 @Component({
-    selector: 'ws-app-training-plan-dashboardview',
-    templateUrl: './training-plan-dashboardview.component.html',
-    styleUrls: ['./training-plan-dashboardview.component.scss'],
-    standalone: false
+  selector: 'ws-app-training-plan-dashboardview',
+  templateUrl: './training-plan-dashboardview.component.html',
+  styleUrls: ['./training-plan-dashboardview.component.scss'],
+  standalone: false
 })
 export class TrainingPlanDashboardviewComponent {
 
@@ -152,7 +152,7 @@ export class TrainingPlanDashboardviewComponent {
     /* tslint:disable */
     const requestPayload = {
       request: {
-        embedUrl: '/embed/dashboards/10',
+        embedUrl: '/embed/dashboards/46',
         userAttributes: {
           roles: this.userData.roles,
           orgId: this.userData.rootOrgId,

@@ -13,7 +13,7 @@ const endpoint = {
   orgRead: '/apis/proxies/v8/org/v1/read',
   lookerProDashboard: 'apis/proxies/v8/looker/dashboard',
 }
-const DEFAULT_LOOKER_EMBED_URL = '/embed/dashboards/7'
+const DEFAULT_LOOKER_EMBED_URL = '/embed/dashboards/Clickhouse_prod_model::clickhouse_mdo_dashboard'
 const UP_MINISTRY_OR_STATE_ID = '01358338771259392049'
 const MINISTRY_LOOKER_DASHBOARDS: { [ministryOrStateId: string]: { embedUrl: string, userModels: string[] } } = {
   [UP_MINISTRY_OR_STATE_ID]: {
@@ -22,12 +22,12 @@ const MINISTRY_LOOKER_DASHBOARDS: { [ministryOrStateId: string]: { embedUrl: str
   },
 }
 @Component({
-    selector: 'ws-app-my-dashboard-home',
-    templateUrl: './my-dashboard-home.component.html',
-    styleUrls: ['./my-dashboard-home.component.scss', 'bootstrap-rain.scss'],
-    /* tslint:disable-next-line */
-    encapsulation: ViewEncapsulation.None,
-    standalone: false
+  selector: 'ws-app-my-dashboard-home',
+  templateUrl: './my-dashboard-home.component.html',
+  styleUrls: ['./my-dashboard-home.component.scss', 'bootstrap-rain.scss'],
+  /* tslint:disable-next-line */
+  encapsulation: ViewEncapsulation.None,
+  standalone: false
 })
 export class MyDashboardHomeComponent implements OnInit {
 
